@@ -1,0 +1,70 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} {{productid.product_name}} View Page {% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="row">
+        <img src="/media/{{productid.image}}" alt="clickme">
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary">Buy Now</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <h5>{{productid.product_name}}</h5>
+      <p>{{productid.desc}}</p>
+      <p><b>Rs. </b><i>{{productid.price}}</i></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+
+<script>
+  console.log('working');
+
+
+  if (localStorage.getItem('cart') == null) {
+    var cart = {};
+  }
+  else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+  }
+
+  $('.cart').click(function () {
+    console.log('clicked');
+    var idstr = this.id.toString();
+    console.log(idstr);
+    if (cart[idstr] != undefined) {
+      cart[idstr] = cart[idstr] + 1;
+    }
+    else {
+      cart[idstr] = 1;
+    }
+    console.log(cart);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+  });
+
+
+  // document.getElementById("popcart").setAttribute('data-bs-content', 'cart')
+  console.log(document.getElementById("popcart").getAttribute('data-bs-content'))
+  document.getElementById("popcart").setAttribute('data-bs-content', '<h5>Cart for all the shopping items</h5>')
+
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+
+{% endblock %}

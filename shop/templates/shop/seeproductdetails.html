@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product Details</title>
+</head>
+<body>
+    
+    {% for prd in Prods %}
+
+    <p>{{prd}}</p>
+    <p>Product Id ->{{prd.product_id}}</p>
+    <p>Product Name ->By {{prd.product_name}} on {{prd.pub_date}}</p>
+    <p>Product Category ->{{prd.category}}</p>
+    <p>Product Subcategory ->{{prd.subcategory}}</p>
+    <p>Product Price ->Price -> {{prd.price}}</p>
+    <p>Product Description ->{{prd.desc}}</p>
+    <p>Product Image ->{{prd.image}}</p>
+    
+    {% endfor %}
+    <!-- {'Prods': <QuerySet [<Product: laptop>, <Product: mouse>, <Product: pic1>, <Product: pic2>]>} -->
+</body>
+</html>
