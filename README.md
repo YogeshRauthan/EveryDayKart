@@ -22,3 +22,15 @@ Upon successful checkout, receive a unique order ID to track the status of your 
 Empowering you with even greater convenience, our website features a robust search function. Simply type in keywords related to the items you're looking for, whether it's a product name or description, and instantly access relevant results. Our advanced search algorithm ensures accurate matches, saving you time and effort in finding exactly what you need amidst our extensive inventory. Whether you have a specific item in mind or are exploring new possibilities, our search functionality puts the power of discovery at your fingertips. Enjoy effortless navigation and seamless exploration as you embark on your shopping journey with us.
 
 In summary, our e-commerce website combines cutting-edge technology with user-centric design to deliver an unparalleled shopping experience. Whether you're browsing for your favorite products or completing a purchase, we're dedicated to providing exceptional service every step of the way. Happy shopping!
+
+// shop page
+![Screenshot (107)](https://github.com/YogeshRauthan/EveryDayKart/assets/157008951/83de8c48-5ec7-4f22-b776-012ba3017b83)
+
+// popcart
+![Screenshot (108)](https://github.com/YogeshRauthan/EveryDayKart/assets/157008951/98e183b4-00fa-425c-baa4-1617ffa58b4c)
+
+// checkout page
+![Screenshot (109)](https://github.com/YogeshRauthan/EveryDayKart/assets/157008951/a2260d3f-09ff-483a-810b-1195d2df5c41)
+
+// track order page
+![Screenshot (110)](https://github.com/YogeshRauthan/EveryDayKart/assets/157008951/4e22072f-d71e-40cf-b2dc-f4ee432f7c88)
